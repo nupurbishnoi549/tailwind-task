@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Practice</title>
+    <link rel="shortcut icon" href="./assets/image/background-img.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    screens: {
+                        sm: '600px',
+                        md: '728px',
+                        lg: '984px',
+                        xl: '1240px',
+                        '2xl': '1496px',
+                    },
+                },
+                extend: {
+                    colors: {
+                        "orchid-red": "#dadada"
+                    },
+                    fontSize: {
+                        "3xl": "28px"
+                    },
+                    boxShadow: {
+                        "button": "0 50px 0 0 #000 inset"
+                    }
+                }
+            }
+        }
+    </script>
+    
+ </style>
+</head>
+
+<body>
+    <section class="min-h-screen justify-center items-center flex px-2">
+        <div class="container max-w-[1140px]">
+            <div
+                class=" bg-[url(./assets/image/background-img.png)] bg-center bg-no-repeat bg-cover   relative after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-red-600/70 overflow-hidden items-center px-3 rounded-3xl sm:py-16 py-5">
+                <div class="relative z-10">
+                    <h2 class="font-semibold text-[31px] sm:text-[56px] text-center text-white pb-5 leading-tight">Interested?  <br> Get in touch with us</h2>
+                        <p class="text-lg text-center text-white sm:pb-9 pb-5 max-w-[592px] mx-auto">Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt  primasofi dede facebooka: förutom tivaligt.</p>
+                        <div class="justify-center items-center flex">
+                            <button class="sm:text-lg text-md text-red-500 rounded-full py-3 px-4 bg-white sm:py-5 sm:px-8 font-bold hover:bg-red-500 hover:text-white transition-all border-2">Get a Quote</button>
+                        </div>
+
+
+
+                </div>
+            </div>
+            </div>
+    </section>
+</body>
+
+</html>
